@@ -20,36 +20,25 @@ h1 {
 }
 
 .grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 14px;
   padding: 14px;
-  box-sizing: border-box;
 }
 
-.grid a {
-  display: block !important;
+button {
   width: 100%;
-  text-decoration: none;
-}
-
-.grid button {
-  display: block !important;
-  width: 100% !important;
-  min-height: 90px !important;
+  height: 110px;
   font-size: 20px;
   font-weight: bold;
   border: none;
   border-radius: 18px;
   color: black;
   background: white;
-  white-space: normal;
-  writing-mode: horizontal-tb !important;
 }
 
-.home {
-  background: #7ee081 !important;
-}
+.home { background: #7ee081; }
+.more { background: #ffd580; }
 </style>
 </head>
 
@@ -66,14 +55,8 @@ h1 {
   <a href="https://www.youtube.com/results?search_query=Teresa+Teng+official+videos"><button>5 Teresa Teng</button></a>
   <a href="https://www.youtube.com/results?search_query=Japanese+old+songs+official+videos"><button>6 Japanese</button></a>
 
-  <a href="https://www.youtube.com/results?search_query=Chinese+old+songs+official+videos"><button>7 Chinese</button></a>
-  <a href="https://www.youtube.com/results?search_query=old+rock+and+roll+official+videos"><button>8 Rock & Roll</button></a>
-
-  <a href="https://www.youtube.com/results?search_query=twist+songs+official+videos"><button>9 Twist</button></a>
-  <a href="https://www.youtube.com/results?search_query=old+comedy+videos"><button>10 Comedy</button></a>
-
-  <a href="index.html"><button class="home">11 HOME</button></a>
-  <a href="https://www.youtube.com"><button>12 YouTube</button></a>
+  <a href="music2.html"><button class="more">7 MORE MUSIC</button></a>
+  <a href="index.html"><button class="home">8 HOME</button></a>
 </div>
 
 </body>
