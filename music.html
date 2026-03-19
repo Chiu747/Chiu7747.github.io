@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MUSIC</title>
 
@@ -15,48 +14,70 @@ body {
 }
 
 h1 {
-  font-size: 34px;
-  margin: 14px 0;
+  font-size: 42px;
+  margin: 20px 0;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  padding: 14px;
+  gap: 18px;
+  padding: 18px;
 }
 
 button {
-  width: 100%;
-  height: 110px;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 22px;
+  height: 120px;
+  border-radius: 20px;
   border: none;
-  border-radius: 18px;
-  color: black;
-  background: white;
+  background: #e6e0d6;
+  font-weight: bold;
 }
-
-.home { background: #7ee081; }
-.more { background: #ffd580; }
 </style>
 </head>
 
 <body>
+
 <h1>MUSIC</h1>
 
 <div class="grid">
-  <a href="https://www.youtube.com/results?search_query=ABBA+official+videos"><button>1 ABBA</button></a>
-  <a href="https://www.youtube.com/results?search_query=Bee+Gees+official+videos"><button>2 Bee Gees</button></a>
 
-  <a href="https://www.youtube.com/results?search_query=Beatles+official+videos"><button>3 Beatles</button></a>
-  <a href="https://www.youtube.com/results?search_query=Beach+Boys+official+videos"><button>4 Beach Boys</button></a>
+<button onclick="window.open('https://www.youtube.com/results?search_query=abba+greatest+hits')">
+1 ABBA
+</button>
 
-  <a href="https://www.youtube.com/results?search_query=Teresa+Teng+official+videos"><button>5 Teresa Teng</button></a>
-  <a href="https://www.youtube.com/results?search_query=Japanese+old+songs+official+videos"><button>6 Japanese</button></a>
+<button onclick="window.open('https://www.youtube.com/results?search_query=bee+gees+greatest+hits')">
+2 Bee Gees
+</button>
 
-  <a href="music2.html"><button class="more">7 MORE MUSIC</button></a>
-  <a href="index.html"><button class="home">8 HOME</button></a>
+<button onclick="window.open('https://www.youtube.com/results?search_query=beatles+greatest+hits')">
+3 Beatles
+</button>
+
+<button onclick="window.open('https://www.youtube.com/results?search_query=beach+boys+greatest+hits')">
+4 Beach Boys
+</button>
+
+<button onclick="window.open('https://www.youtube.com/results?search_query=teresa+teng+playlist')">
+5 Teresa Teng
+</button>
+
+<button onclick="window.open('https://www.youtube.com/results?search_query=old+chinese+songs+70s+80s+playlist')">
+6 Old Chinese
+</button>
+
+<button onclick="window.open('https://www.youtube.com/results?search_query=enka+classic+japanese+songs+playlist')">
+7 Old Japanese
+</button>
+
+<button onclick="location.href='music2.html'">
+8 MORE MUSIC
+</button>
+
+<button onclick="location.href='index.html'">
+9 HOME
+</button>
+
 </div>
 
 </body>
