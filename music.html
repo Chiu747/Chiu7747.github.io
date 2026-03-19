@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUSIC</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 24px 0 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 24px;
+  font-weight: bold;
+  height: 130px;
+  border-radius: 22px;
+  border: none;
+  background: #e6e0d6;
+  color: black;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.home {
+  width: calc(100% - 36px);
+  height: 110px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 6px 18px 28px;
+  display: block;
+  border-radius: 22px;
+  border: none;
+  background: #cccccc;
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  button {
+    height: 120px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    height: 105px;
+    font-size: 22px;
+  }
+
+  .home {
+    height: 95px;
+    font-size: 26px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<h1>MUSIC</h1>
+
+<div class="grid">
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=ABBA+official+videos')">
+1 ABBA
+</button>
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=Bee+Gees+official+videos')">
+2 Bee Gees
+</button>
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=Beatles+official+videos')">
+3 Beatles
+</button>
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=Beach+Boys+official+videos')">
+4 Beach Boys
+</button>
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=Elvis+Presley+official+videos')">
+5 Elvis
+</button>
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=very+old+Japanese+songs')">
+6 Japanese Old
+</button>
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=1950s+hits+videos')">
+7 50s
+</button>
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=1960s+hits+videos')">
+8 60s
+</button>
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=1970s+hits+videos')">
+9 70s
+</button>
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=1980s+hits+videos')">
+10 80s
+</button>
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=Teresa+Teng+official+videos')">
+11 Teresa Teng
+</button>
+
+<button onclick="openMusic('https://www.youtube.com/results?search_query=Chinese+comedy+videos')">
+12 Comedy
+</button>
+
+</div>
+
+<button class="home" onclick="location.href='HOME.html'">
+HOME
+</button>
+
+<script>
+function openMusic(url) {
+  window.location.href = url;
+}
+</script>
+
+</body>
+</html>
