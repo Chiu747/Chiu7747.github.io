@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>HOME</title>
 
 <style>
@@ -15,30 +16,38 @@ body {
 }
 
 h1 {
-  font-size: 48px;
-  margin: 30px 0;
+  font-size: 40px;
+  margin: 20px 0;
 }
 
+/* GRID FIX */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 20px;
+  height: calc(100vh - 100px);
+  box-sizing: border-box;
 }
 
 button {
-  font-size: 28px;
-  height: 160px;
-  border-radius: 25px;
-  border: none;
+  font-size: 22px;
   font-weight: bold;
-  color: black;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  height: 100%;
 }
 
-.call { background: #ff6666; }
-.music { background: #66cc66; }
-.youtube { background: #ff3333; }
-.comedy { background: #66aaff; }
+/* COLORS */
+.call { background: #ff6b6b; }
+.music { background: #2ecc71; }
+.youtube { background: #ff4d4d; }
+.comedy { background: #4da6ff; }
+
+a {
+  text-decoration: none;
+}
 </style>
 </head>
 
@@ -47,21 +56,23 @@ button {
 <h1>HOME</h1>
 
 <div class="grid">
-  <button class="call" onclick="location.href='PHONE.html'">
-    1 CALL FAMILY
-  </button>
 
-  <button class="music" onclick="location.href='music.html'">
-    2 MUSIC
-  </button>
+<a href="#">
+<button class="call">1 CALL FAMILY</button>
+</a>
 
-  <button class="youtube" onclick="location.href='https://www.youtube.com'">
-    3 YOUTUBE
-  </button>
+<a href="music.html">
+<button class="music">2 MUSIC</button>
+</a>
 
-  <button class="comedy" onclick="location.href='https://www.youtube.com/results?search_query=Chinese+comedy'">
-    4 COMEDY
-  </button>
+<a href="https://www.youtube.com">
+<button class="youtube">3 YOUTUBE</button>
+</a>
+
+<a href="https://www.youtube.com/results?search_query=comedy">
+<button class="comedy">4 COMEDY</button>
+</a>
+
 </div>
 
 </body>
