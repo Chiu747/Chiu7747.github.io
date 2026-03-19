@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>HOME</title>
 
 <style>
@@ -16,38 +15,39 @@ body {
 }
 
 h1 {
-  font-size: 40px;
-  margin: 20px 0;
+  font-size: 36px;
+  margin: 15px 0;
 }
 
-/* GRID FIX */
+/* 🔥 FLEXIBLE GRID (2 columns, many rows) */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding: 20px;
-  height: calc(100vh - 100px);
-  box-sizing: border-box;
+  gap: 14px;
+  padding: 14px;
 }
 
-button {
+/* BUTTON STYLE */
+.grid a {
+  text-decoration: none;
+}
+
+.grid button {
+  width: 100%;
+  height: 90px;   /* controls height */
   font-size: 22px;
   font-weight: bold;
-  border-radius: 20px;
   border: none;
-  width: 100%;
-  height: 100%;
+  border-radius: 18px;
+  color: black;
 }
 
 /* COLORS */
-.call { background: #ff6b6b; }
-.music { background: #2ecc71; }
-.youtube { background: #ff4d4d; }
-.comedy { background: #4da6ff; }
-
-a {
-  text-decoration: none;
-}
+.call { background: #ff8a8a; }
+.music { background: #7ee081; }
+.youtube { background: #ff6b6b; }
+.comedy { background: #9fd0ff; }
+.extra { background: #ffd580; }
 </style>
 </head>
 
@@ -57,21 +57,26 @@ a {
 
 <div class="grid">
 
-<a href="#">
-<button class="call">1 CALL FAMILY</button>
-</a>
+<a href="#"><button class="call">1 CALL FAMILY</button></a>
+<a href="music.html"><button class="music">2 MUSIC</button></a>
 
-<a href="music.html">
-<button class="music">2 MUSIC</button>
-</a>
+<a href="https://www.youtube.com"><button class="youtube">3 YOUTUBE</button></a>
+<a href="https://www.youtube.com/results?search_query=comedy"><button class="comedy">4 COMEDY</button></a>
 
-<a href="https://www.youtube.com">
-<button class="youtube">3 YOUTUBE</button>
-</a>
+<a href="#"><button class="extra">5</button></a>
+<a href="#"><button class="extra">6</button></a>
 
-<a href="https://www.youtube.com/results?search_query=comedy">
-<button class="comedy">4 COMEDY</button>
-</a>
+<a href="#"><button class="extra">7</button></a>
+<a href="#"><button class="extra">8</button></a>
+
+<a href="#"><button class="extra">9</button></a>
+<a href="#"><button class="extra">10</button></a>
+
+<a href="#"><button class="extra">11</button></a>
+<a href="#"><button class="extra">12</button></a>
+
+<a href="#"><button class="extra">13</button></a>
+<a href="#"><button class="extra">14</button></a>
 
 </div>
 
